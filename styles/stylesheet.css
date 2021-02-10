@@ -1,0 +1,117 @@
+html, 
+body,
+form {
+    font-family: Lato;
+}
+
+header {
+    font-weight: 900;
+    display: block;
+    margin: 0;
+    z-indez: 2;
+    color: grey;
+    background-color: black;
+}
+
+header img {
+    display: inline-block;
+    width: 1450px;
+    height: 400px;
+}
+body {
+    background-color: black;
+}
+
+article, 
+p, 
+h3{
+    padding-left: 3px;
+    text-align: right;
+    display: inline-block;
+    width: 600px;
+    color: grey;
+    background-color:black;
+    display: inline-flex;
+}
+
+aside img {
+    display: inline-flex;
+    height: 325px;
+    width: 400px;
+}
+footer {
+    line-height: 2px;
+    display: block;
+    text-align: left;
+}
+
+p {
+    top: 15px;
+}
+
+.Main {
+    display: grid;
+    width: 1450px;
+    grid-template-columns: 483px 483px 483px;
+    grid-template-rows: 8% 48% 27% 16%; /* 1238 pixels  100 - 600 - 338 - 200*/
+    grid-column-gap: 20px;
+    align-items: start;
+    justify-content: space-around;
+    justify-items: flex-start;
+    text-align: left;
+    margin: 0 auto;
+
+}
+
+h3,
+footer,
+.Intro,
+.History,
+.Hobbies  {
+    display: inline-grid;
+    overflow: auto;
+    flex-basis: auto;
+    flex-wrap: wrap;
+}
+
+h3 {
+    overflow: visible;
+}
+
+.Intro h3 {
+    grid-area: 1 / 1 / span 1 / span 1;
+    display: grid;
+}
+
+.Hist h3 {
+    grid-area: 1 / 2 / span 1 / span 1;
+
+}
+
+.Hobb h3 {
+
+    grid-area: 1 / 3 / span 1 / span 1;
+}
+
+.Intro p {
+    grid-area: 2 / 1 / span 1 / span 1;
+
+}
+
+.Hist p {
+    grid-area: 2 / 2 / span 1 / span 1;
+
+}
+
+.Hobb p {
+    grid-area: 2 / 2 / span 1 / span 1;
+
+}
+
+#Profile {
+    grid-area: 3 / 1 / span 1 / span 3;
+}
+
+footer {
+    grid-area: 4 / 1 / span 1 / span 3;
+}
